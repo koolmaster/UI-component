@@ -50,6 +50,10 @@
     "react-dom": "^18.2.0",
     "react-json-pretty": "^2.2.0",
     "rimraf": "^3.0.2",
+    "rollup": "^2.36.1",
+    "rollup-plugin-filesize": "^9.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-visualizer": "^4.2.0",
     "semantic-release": "^19.0.5",
     "styled-normalize": "^8.0.7"
   },

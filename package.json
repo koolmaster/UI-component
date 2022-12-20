@@ -1,15 +1,18 @@
 {
-  "name": "@common/component-ui",
+  "name": "@common/animation-components-ui",
   "version": "1.0.1",
   "description": "Common UI library for Web",
   "main": "lib/index.js",
   "module": "lib/es/index.js",
   "types": "./main.d.ts",
-  "author": "koolmaster",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koolmaster/UI-component"
+  },
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",

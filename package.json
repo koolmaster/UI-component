@@ -1,6 +1,6 @@
 {
   "name": "@common/component-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common UI library for Web",
   "main": "index.js",
   "author": "koolmaster",

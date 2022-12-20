@@ -45,7 +45,7 @@ jobs:
 
       - name: Setup Github Package Registry
         run: |
-          npm config set "@tikivn:registry" "https://npm.pkg.github.com"
+          npm config set "@koolmaster:registry" "https://npm.pkg.github.com"
           npm config set "//npm.pkg.github.com/:_authToken" "${GH_TOKEN}"
         env:
           PERSONAL_TOKEN: ${{secrets.GH_TOKEN}}

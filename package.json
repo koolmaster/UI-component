@@ -10,7 +10,6 @@
     "url": "https://github.com/koolmaster/UI-component"
   },
   "publishConfig": {
-    "@koolmaster:registry": "https://npm.pkg.github.com",
     "access": "public"
   },
   "license": "MIT",

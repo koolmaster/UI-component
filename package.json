@@ -2,7 +2,8 @@
   "name": "@common/component-ui",
   "version": "1.0.1",
   "description": "Common UI library for Web",
-  "type":"commonjs",
+  "main": "lib/index.js",
+  "type": "module",
   "author": "koolmaster",
   "license": "MIT",
   "devDependencies": {

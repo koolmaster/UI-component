@@ -7,6 +7,9 @@
   "types": "./main.d.ts",
   "author": "koolmaster",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",

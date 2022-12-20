@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
     steps:
       - id: yarn-cache
         name: Get Yarn cache path

@@ -26,7 +26,8 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: actions/cache@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         name: Load Yarn cache
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
@@ -45,7 +46,7 @@ jobs:
       - name: Setup Github Package Registry
         run: |
           npm config set "@tikivn:registry" "https://npm.pkg.github.com"
-          npm config set "//npm.pkg.github.com/:_authToken" "${secrets.GH_TOKEN}"
+          npm config set "//npm.pkg.github.com/:_authToken" "${GH_TOKEN}"
         env:
           PERSONAL_TOKEN: ${{secrets.GH_TOKEN}}
 

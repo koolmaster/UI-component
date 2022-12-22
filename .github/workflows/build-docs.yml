@@ -1,7 +1,7 @@
 name: Publish Storybook to Netlify
 
 on:
-  registry_package:
+  release:
     types: [published]
 
 jobs:

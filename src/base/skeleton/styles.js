@@ -1,4 +1,3 @@
-import Box from '@/base/box';
 import styled, { keyframes, css } from 'styled-components';
 
 const SkeletonLoading = keyframes`
@@ -10,7 +9,7 @@ const SkeletonLoading = keyframes`
   }
 `;
 
-export const StyledSkeleton = styled(Box)`
+export const StyledSkeleton = styled.div`
   background: #efefef;
   background: linear-gradient(
     90deg,

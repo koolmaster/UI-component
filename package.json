@@ -1,9 +1,17 @@
 {
-  "name": "@common/component-ui",
-  "version": "1.0.0",
+  "name": "@koolmaster/animation-components-ui",
+  "version": "1.0.1",
   "description": "Common UI library for Web",
-  "main": "index.js",
-  "author": "koolmaster",
+  "main": "lib/index.js",
+  "module": "lib/es/index.js",
+  "types": "./main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koolmaster/UI-component"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.5",
@@ -50,7 +58,10 @@
     "react-dom": "^18.2.0",
     "react-json-pretty": "^2.2.0",
     "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.5",
+    "rollup": "^2.66.0",
+    "rollup-plugin-filesize": "^9.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-visualizer": "^4.2.0",
     "styled-normalize": "^8.0.7"
   },
   "dependencies": {

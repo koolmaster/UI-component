@@ -1,14 +1,12 @@
-name: Publish to GITHUB Package
+name: Publish Storybook to Netlify
 
 on:
-  push:
-    branches:
-      - master
-      - next
+  registry_package:
+    types: [published]
 
 jobs:
-  release:
-    name: Release
+  publish_docs_netlify:
+    name: Publish Storybook to Netlify
     runs-on: ubuntu-latest
     steps:
       - id: yarn-cache
@@ -38,25 +36,13 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Setup CI Git User
-        run: |
-          git config --global user.email "koolmaster@gmail.com"
-          git config --global user.name "koolmaster"
+      - name: Build Storybook
+        run: yarn build-storybook
 
-      - name: Setup Github Package Registry
-        run: |
-          npm config set "@koolmaster:registry" "https://npm.pkg.github.com"
-          npm config set "//npm.pkg.github.com/:_authToken" "${GH_TOKEN}"
-        env:
-          PERSONAL_TOKEN: ${{secrets.GH_TOKEN}}
-
-      - name: Publish packages
-        uses: changesets/action@master
+      - name: Publish Docs to Netlify
+        uses: netlify/actions/cli@master
         with:
-          publish: yarn release
-          commit: 'chore(release): version packages'
+          args: deploy --dir=docs --prod
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
- 
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  

@@ -1,0 +1,32 @@
+import 'react-json-pretty/themes/monikai.css';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import MovieCard from './MovieCard';
+import { movieCardInfo } from '../../mocks';
+import JSONPretty from 'react-json-pretty';
+
+<Meta title="Overview/Card/Movie Card" component={MovieCard} />
+
+# Card - Movie Card
+
+[Click here to go to playground](/?path=/story/animations-movie-card--default)
+
+```javascript
+import { MovieCard } from '@tikivn/tiki-common-ui/lib/animations';
+```
+
+### Props
+
+<ArgsTable of={MovieCard} />
+
+#### MovieCardInfo props
+
+<JSONPretty data={movieCardInfo} />
+
+### Important Notes
+
+### Demo
+
+<Canvas>
+  <h3>Sample default card</h3>
+  <Story id="animations-movie-card--default" />
+</Canvas>

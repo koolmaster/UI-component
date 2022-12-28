@@ -30,10 +30,10 @@ For using in project:
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-// mobile
-import { FullCoupon } from '@koolmaster/animation-components-ui/lib/mobile';
-// desktop
-import { FullCoupon } from '@koolmaster/animation-components-ui/lib/desktop';
+// animations
+import { MovieCard } from '@koolmaster/animation-components-ui/lib/animations';
+// library
+import { FullCoupon } from '@koolmaster/animation-components-ui/lib/library';
 // base
 import { Skeleton } from '@koolmaster/animation-components-ui';
 ```

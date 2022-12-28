@@ -4,7 +4,7 @@ import { movieCardInfo } from '@/mocks';
 import MovieCard from './MovieCard';
 
 export default {
-  title: 'Animations/MovieCard',
+  title: 'Animations/Movie Card',
   component: MovieCard,
   argTypes: { movieInfo: movieCardInfo },
 };

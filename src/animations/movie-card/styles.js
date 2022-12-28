@@ -1,4 +1,5 @@
 import { colors } from '@/themes/default';
+import { isEmpty } from 'lodash';
 import styled from 'styled-components';
 
 export const StyledMovieCard = styled.div`
@@ -8,6 +9,7 @@ export const StyledMovieCard = styled.div`
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   &:hover {
     > .poster {
       &::before {
@@ -45,7 +47,10 @@ export const StyledPoster = styled.div`
 
 export const StyledDetail = styled.div`
   position: absolute;
-  bottom: -175px;
+  bottom: ${({ checkData }) => {
+    if (isEmpty(checkData.actor)) return '-95px';
+    return ' -165px';
+  }};
   left: 0;
   padding: 20px;
   width: 100%;
@@ -73,6 +78,59 @@ export const StyledDetail = styled.div`
       color: ${colors.white};
       margin-left: 5px;
       padding-top: 1px;
+    }
+  }
+  .tags {
+    position: relative;
+    margin-top: 5px;
+    span {
+      padding: 2px 5px;
+      margin-right: 5px;
+      color: ${colors.white};
+      background: #03a8f5;
+      border-radius: 4px;
+      &:nth-child(2) {
+        background: #ff5722;
+      }
+      &:nth-child(3) {
+        background: #92d14f;
+      }
+    }
+  }
+  .info {
+    color: ${colors.white};
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 18px;
+  }
+  .cast {
+    position: relative;
+    h4 {
+      color: ${colors.white};
+      margin: 10px 0 0 0;
+    }
+    ul {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 `;

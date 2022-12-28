@@ -39,4 +39,4 @@ function createConfig(filename) {
   return config;
 }
 
-export default ['src/index.js', 'src/mobile.js', 'src/desktop.js'].map(createConfig);
+export default ['src/index.js', 'src/animations.js', 'src/library.js'].map(createConfig);

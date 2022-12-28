@@ -1,5 +1,11 @@
 # @common/component-ui
 
+## 1.0.4
+
+### Patch Changes
+
+- 1c64c46: Add component MovieCard
+
 ## 1.0.3
 
 ### Patch Changes

@@ -25,3 +25,17 @@ export const movieCardInfo = {
     },
   ],
 };
+
+export const portfolioCardInfo = {
+  avatar: 'https://i.ibb.co/k8R7jfr/img.jpg',
+  name: 'Alina Smith',
+  job: 'Senior UX/UI Designer',
+  info: [
+    { title: 'Posts', count: '342' },
+    { title: 'Project', count: '15' },
+    { title: 'Followers', count: '120k' },
+    { title: 'Following', count: '142' },
+  ],
+  buttonsLeftText: 'Follow',
+  buttonsRightText: 'Message',
+};

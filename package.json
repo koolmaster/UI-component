@@ -1,6 +1,6 @@
 {
   "name": "@koolmaster/animation-components-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Common UI library for Web",
   "main": "lib/index.js",
   "module": "lib/es/index.js",

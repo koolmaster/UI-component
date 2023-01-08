@@ -1,0 +1,32 @@
+import 'react-json-pretty/themes/monikai.css';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import PortfolioCard from './PortfolioCard';
+import { portfolioCardInfo } from '../../mocks';
+import JSONPretty from 'react-json-pretty';
+
+<Meta title="Overview/Card/Portfolio Card" component={PortfolioCard} />
+
+# Card - Portfolio Card
+
+[Click here to go to playground](/?path=/story/animations-portfolio-card--default)
+
+```javascript
+import { PortfolioCard } from '@koolmaster/animation-components-ui/lib/animations';
+```
+
+### Props
+
+<ArgsTable of={PortfolioCard} />
+
+#### MovieCardInfo props
+
+<JSONPretty data={portfolioCardInfo} />
+
+### Important Notes
+
+### Demo
+
+<Canvas>
+  <h3>Sample default portfolio card</h3>
+  <Story id="animations-portfolio-card--default" />
+</Canvas>

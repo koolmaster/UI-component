@@ -1,6 +1,6 @@
 import React from 'react';
 import { Normalize } from 'styled-normalize';
-import { GlobalStyle, StyledFont } from './global.style';
+import { GlobalStyle, StyledFont2 } from './global.style';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -35,7 +35,7 @@ export const decorators = [
     return (
       <>
         <Normalize />
-        <StyledFont />
+        <StyledFont2 />
         <GlobalStyle />
         <Story />
       </>

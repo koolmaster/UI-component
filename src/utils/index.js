@@ -1,8 +1,19 @@
 /* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
+import Box from '@/base/box';
 import React from 'react';
 import isNil from 'lodash/isNil';
 import get from 'lodash/get';
+
+/** sample usage:
+ * const ButtonBox = getBox('button') => will render as <button> element
+ * default is <div>, can use default exported Box
+ */
+export const getBox = (tag) => {
+  return React.forwardRef((props, ref) => {
+    return <Box {...props} ref={ref} as={tag} />;
+  });
+};
 
 export const getFinalData = (data) => {
   if (!data) return {};

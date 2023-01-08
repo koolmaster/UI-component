@@ -11,12 +11,17 @@
 
 ## 2. Usage
 
-### 2.1. Run install script
+### 2.1. Getting Started
 
-After login to Organization success, run following command to install the `@koolmaster/animation-components-ui` package:
+Run following command to install the `@koolmaster/animation-components-ui` package:
 
 ```sh
+// with yarn
 yarn add @koolmaster/animation-components-ui
+```
+```sh
+// with npm
+npm install @koolmaster/animation-components-ui
 ```
 
 Replace `latest` with appropriate version
@@ -33,58 +38,12 @@ import ReactDOM from 'react-dom';
 // animations
 import { MovieCard } from '@koolmaster/animation-components-ui/lib/animations';
 // library
-import { FullCoupon } from '@koolmaster/animation-components-ui/lib/library';
+import { Countdown } from '@koolmaster/animation-components-ui/lib/library';
 // base
 import { Skeleton } from '@koolmaster/animation-components-ui';
 ```
 
-## 3. How to Start Contributing
+## License
 
-To start contribute to this project, first clone the repository: `@koolmaster/animation-components-ui`. Then in the project directory, we can run these follow scripts to start development:
-
-### 3.1. `yarn gen`
-
-Run the auto-generating component snippet
-
-### 3.2. `yarn storybook`
-
-Start the Storybook for development UI Component, or view documents
-
-### 3.3. `yarn build`
-
-Start the build process for generating library
-
-### 3.4. `yarn lint`
-
-Start linting errors and auto fixing warnings
-
-## 4. Contributing to this project
-
-For contributing to this project
-
-### 4.1. Clone repository
-
-### 4.2. Start develop UI component
-
-Run generate for create a new component and start development server:
-
-```bash
-yarn gen
-...
-yarn storybook
-```
-
-### 4.3. Write unit tests for UI Component
-
-Start Jest in the watch mode and write unit tests for your components:
-
-```bash
-yarn test:watch
-```
-
-All tests must be passed before pushing to the origin
-
-### 4.4. PR Review and merge
-
-After push to a new feature branch, please create a new PR to `master` branch and request a review.
-If the PR is fully merged, release manager will start to shipping the new feature with appropriate version.
+This project is licensed under the terms of the
+[MIT license](/LICENSE).

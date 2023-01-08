@@ -1,5 +1,12 @@
 # @common/component-ui
 
+## 1.0.5
+
+### Patch Changes
+
+- 3b44490: Add library countdown (New)
+- 38ab2d8: Add animation portfolio card (NEW)
+
 ## 1.0.4
 
 ### Patch Changes

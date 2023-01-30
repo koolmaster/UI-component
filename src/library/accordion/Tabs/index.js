@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { IoIosAdd } from 'react-icons/io';
 import { Tab } from './style';
 

@@ -35,8 +35,27 @@ export const ninedotData = [
     url: '',
   },
   {
-    type: 'material',
-    name: 'MdDeleteOutline',
+    type: 'ionic5',
+    name: 'IoTrashOutline',
     url: '',
-  }
+  },
+];
+
+export const actionData = [
+  {
+    type: 'ionic5',
+    name: 'IoCameraOutline',
+    url: '',
+    action: () => console.log('ahjhj'),
+  },
+  {
+    type: 'ionic5',
+    name: 'IoSettingsOutline',
+    url: '',
+  },
+  {
+    type: 'ionic5',
+    name: 'IoTrashOutline',
+    url: '',
+  },
 ];

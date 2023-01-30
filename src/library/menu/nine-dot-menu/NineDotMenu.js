@@ -9,6 +9,13 @@ import { isEmpty } from 'lodash';
 const NineDotMenu = ({ data, className }) => {
   const [active, setActive] = useState(false);
   if (isEmpty(data) || data.length === 0 || data.length >= 9) return null;
+  const handleClick = (url, action) => {
+    if (!isEmpty(url)) window.location.href = url;
+    else {
+      if (action) action();
+    }
+  };
+
   return (
     <StyledNineDotMenu className={className}>
       <div className={`navigation ${active ? 'active' : ''}`} onClick={() => setActive(true)}>
@@ -17,7 +24,7 @@ const NineDotMenu = ({ data, className }) => {
           const y = index === 0 || index === 1 ? 0 : index === 3 || index === 4 || index === 7 ? 1 : -1;
 
           return (
-            <WrapperIcon x={x} y={y} i={index} key={index} active={active}>
+            <WrapperIcon x={x} y={y} i={index} key={index} active={active}  onClick={() => handleClick(item.url, item.action)}>
               <Icon type={item.type} icon={item.name} />
             </WrapperIcon>
           );
@@ -50,6 +57,7 @@ NineDotMenu.propTypes = {
       ]).isRequired,
       name: PropTypes.string.isRequired,
       url: PropTypes.string,
+      action: PropTypes.func,
     })
   ).isRequired,
 

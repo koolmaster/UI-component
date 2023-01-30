@@ -1,22 +1,22 @@
 import 'react-json-pretty/themes/monikai.css';
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
-import NineDotMenu from './NineDotMenu';
+import ActionMenu from './ActionMenu';
 import { ninedotData } from '../../../mocks';
 import JSONPretty from 'react-json-pretty';
 
-<Meta title="Overview/Menu/9Dot Menu" component={NineDotMenu} />
+<Meta title="Overview/Menu/Action Menu" component={ActionMenu} />
 
-# Menu - Nine Dot Menu
+# Menu - Action Menu
 
-[Click here to go to playground](/?path=/story/library-menu-ninedotmenu--default)
+[Click here to go to playground](/?path=/story/library-menu-actionmenu--default)
 
 ```javascript
-import { NineDotMenu } from '@koolmaster/animation-components-ui/lib/library';
+import { ActionMenu } from '@koolmaster/animation-components-ui/lib/library';
 ```
 
 ### Props
 
-<ArgsTable of={NineDotMenu} />
+<ArgsTable of={ActionMenu} />
 
 #### Nine dot Data props
 
@@ -26,11 +26,12 @@ import { NineDotMenu } from '@koolmaster/animation-components-ui/lib/library';
 
 - Only using font icon, Better effect with outline icon.
 - Add property type to choose icon font type. Only one of the following can be selected: `grommet`, `github`,`game`,`feather`,`flatColor`,`devi`,`circum`,`fontAwesome`,`bootstrap`,`box`,`antDesign`,`ionic5`,`material`.
-- Get icon name from react-icon, see more at [react-icon](https://react-icons.github.io/react-icons)
+- Get icon name from react-icon, see more at [react-icon](https://react-icons.github.io/react-icons).
+- If the URL is empty then use the action prop. If the URL has data, the URL is preferred.
 
 ### Demo
 
 <Canvas>
   <h3>Sample default Nine Dot Menu</h3>
-  <Story id="library-menu-ninedotmenu--default" />
+  <Story id="library-menu-actionmenu--default" />
 </Canvas>

@@ -13,6 +13,10 @@ html, body {
   font-family: Poppins,Helvetica,Arial,sans-serif;
   font-size: 14px;
   background-color: #efefef;
+  .innerZoomElementWrapper {
+    display: flex !important;
+    flex-direction: column !important;;
+  }
 }
 
 body {

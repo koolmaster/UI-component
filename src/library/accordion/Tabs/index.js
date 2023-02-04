@@ -16,11 +16,11 @@ const Tabs = ({ data }) => {
       {data.map((item, index) => {
         return (
           <Tab className={active === index ? 'active' : ''} key={index}>
-            {/* <div className="label" onClick={() => handleActive(index)}>
+            <div className="label" onClick={() => handleActive(index)}>
               <span>{`0${index + 1}`}</span>
               <span>{item.title}</span>
               <Icon type="ionic4" icon="IoIosAdd" />
-            </div> */}
+            </div>
             <div className="content">
               {item.type === 'html' ? (
                 <div dangerouslySetInnerHTML={{ __html: item.content }} />

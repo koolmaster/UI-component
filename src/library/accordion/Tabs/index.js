@@ -21,13 +21,13 @@ const Tabs = ({ data }) => {
               <span>{item.title}</span>
               <Icon type="ionic4" icon="IoIosAdd" />
             </div>
-            <div className="content">
+            {/* <div className="content">
               {item.type === 'html' ? (
                 <div dangerouslySetInnerHTML={{ __html: item.content }} />
               ) : (
                 <p dangerouslySetInnerHTML={{ __html: item.content }} />
               )}
-            </div>
+            </div> */}
           </Tab>
         );
       })}

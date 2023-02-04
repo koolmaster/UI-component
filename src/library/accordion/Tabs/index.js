@@ -1,5 +1,5 @@
+import Icon from '@/base/icon';
 import React, { useState } from 'react';
-import { IoIosAdd } from 'react-icons/io';
 import { Tab } from './style';
 
 const Tabs = ({ data }) => {
@@ -19,7 +19,7 @@ const Tabs = ({ data }) => {
             <div className="label" onClick={() => handleActive(index)}>
               <span>{`0${index + 1}`}</span>
               <span>{item.title}</span>
-              <IoIosAdd />
+              <Icon type="ionic5" icon="IoIosAdd" />
             </div>
             <div className="content">
               {item.type === 'html' ? (

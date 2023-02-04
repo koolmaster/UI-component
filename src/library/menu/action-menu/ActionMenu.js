@@ -16,13 +16,8 @@ const ActionMenu = ({ data, className }) => {
   };
 
   return (
-    <StyledActionMenu className={className}>
-      <MenuToggle
-        className={`navigation ${active ? 'active' : ''}`}
-        active={active}
-        width={data.length * 80}
-        onClick={() => setActive(!active)}
-      />
+    <StyledActionMenu className={className} active={active} width={data.length * 80}>
+      <div className={`navigation ${active ? 'active' : ''}`}e onClick={() => setActive(!active)} />
       <div className="menu">
         <ul>
           {data.map((item, index) => {

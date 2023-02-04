@@ -11,7 +11,7 @@ const Accordion = (props) => {
   return (
     <StyledAccordion className={className}>
       {title && <div className="title">{title}</div>}
-      {/* <Tabs data={data}/> */}
+      <Tabs data={data}/>
     </StyledAccordion>
   );
 };

@@ -28,8 +28,8 @@ const UserInfoAction = (props) => {
   return (
     <Item className={className} ref={wrapperRef}>
       <User>
-        <div class="imgBx">{avatar ? <img src={avatar} alt="avatar" /> : <EmptyAvatar />}</div>
-        <div class="details">
+        <div className="imgBx">{avatar ? <img src={avatar} alt="avatar" /> : <EmptyAvatar />}</div>
+        <div className="details">
           <p>{name}</p>
           <p>{career}</p>
         </div>

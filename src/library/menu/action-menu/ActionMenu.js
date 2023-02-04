@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Icon from '@/base/icon';
 import { isEmpty } from 'lodash';
 
-import { StyledActionMenu, MenuToggle, MenuContent, WrapperIcon } from './styles';
+import { StyledActionMenu, WrapperIcon } from './styles';
 
 const ActionMenu = ({ data, className }) => {
   const [active, setActive] = useState(false);

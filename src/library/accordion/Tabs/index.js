@@ -19,7 +19,7 @@ const Tabs = ({ data }) => {
             <div className="label" onClick={() => handleActive(index)}>
               <span>{`0${index + 1}`}</span>
               <span>{item.title}</span>
-              <Icon type="ionic5" icon="IoIosAdd" />
+              <Icon type="ionic4" icon="IoIosAdd" />
             </div>
             <div className="content">
               {item.type === 'html' ? (

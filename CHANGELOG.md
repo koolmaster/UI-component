@@ -1,14 +1,22 @@
 # @common/component-ui
 
+## 1.0.8
+
+### Patch Changes
+
+- 647022f: Add animations advance mini calendar (NEW)
+
 ## 1.0.7
 
 ### Patch Changes
+
 Add:
 Library:
+
 - 16d4c8a: Add action menu (NEW)
 - 6acc2b9: Add menu 9dot (NEW)
 - 2f1691f: Add Accordion (NEW)
-Animations:
+  Animations:
 - f4dea8f: Add UserInfo action (NEW)
 
 ## 1.0.6

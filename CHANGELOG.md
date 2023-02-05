@@ -3,11 +3,13 @@
 ## 1.0.7
 
 ### Patch Changes
-
-- f4dea8f: Add UserInfo action (NEW)
-- 16d4c8a: Add library action menu (NEW)
-- 6acc2b9: Add library menu 9dot (NEW)
+Add:
+Library:
+- 16d4c8a: Add action menu (NEW)
+- 6acc2b9: Add menu 9dot (NEW)
 - 2f1691f: Add Accordion (NEW)
+Animations:
+- f4dea8f: Add UserInfo action (NEW)
 
 ## 1.0.6
 

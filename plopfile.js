@@ -16,7 +16,7 @@ module.exports = function (plop) {
         type: 'list',
         name: 'platform',
         message: 'Choose platform',
-        choices: ['Animations', 'Library'],
+        choices: ['animations', 'library'],
       },
       {
         type: 'input',

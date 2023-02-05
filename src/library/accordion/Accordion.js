@@ -10,8 +10,8 @@ const Accordion = (props) => {
   if (isEmpty(data)) return null;
   return (
     <StyledAccordion className={className}>
-      {/* {title && <div className="title">{title}</div>}
-      <Tabs data={data}/> */}
+      {title && <div className="title">{title}</div>}
+      <Tabs data={data}/>
     </StyledAccordion>
   );
 };

@@ -1,0 +1,25 @@
+import 'react-json-pretty/themes/monikai.css';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import DarkClock from './DarkClock';
+import JSONPretty from 'react-json-pretty';
+
+<Meta title="Overview/Clock/Dark Clock" component={DarkClock} />
+
+# Clock - Dark Clock
+
+[Click here to go to playground](/?path=/story/animations-dark-clock--default)
+
+```javascript
+import { DarkClock } from '@koolmaster/animation-components-ui/lib/animations';
+```
+
+### Props
+
+<ArgsTable of={DarkClock} />
+
+### Demo
+
+<Canvas>
+  <h3>Sample default dark clock</h3>
+  <Story id="animations-dark-clock--default" />
+</Canvas>

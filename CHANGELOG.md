@@ -1,5 +1,12 @@
 # @common/component-ui
 
+## 1.0.9
+
+### Patch Changes
+
+- a4c4ff1: Add animations material clock (NEW)
+- 80a6260: Add animations dark clock (NEW)
+
 ## 1.0.8
 
 ### Patch Changes

@@ -1,0 +1,25 @@
+import 'react-json-pretty/themes/monikai.css';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import MaterialClock from './MaterialClock';
+import JSONPretty from 'react-json-pretty';
+
+<Meta title="Overview/Clock/Material Clock" component={MaterialClock} />
+
+# Clock - Material Clock
+
+[Click here to go to playground](/?path=/story/animations-material-clock--default)
+
+```javascript
+import { MaterialClock } from '@koolmaster/animation-components-ui/lib/animations';
+```
+
+### Props
+
+<ArgsTable of={MaterialClock} />
+
+### Demo
+
+<Canvas>
+  <h3>Sample default material clock</h3>
+  <Story id="animations-material-clock--default" />
+</Canvas>
